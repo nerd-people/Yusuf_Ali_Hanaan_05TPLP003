@@ -1,0 +1,290 @@
+<html>
+ <head>
+  <title>
+   Data Divisi
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"> 
+
+ </head>
+ <body>
+  <div class="d-flex">
+   <div class="sidebar p-3">
+    <div class="text-center mb-4">
+        <img alt="University Logo" class="img-fluid rounded-circle" height="100" src="UNPAM_logo.png" width="100"/>
+        <h4 class="mt-2">
+         Universitas Pamulang
+        </h4>
+       </div>
+       <div class="mb-4">
+        <div class="d-flex align-items-center">
+         <img alt="User Avatar" class="img-fluid rounded-circle me-2" height="50" src="profile.jpg" width="50"/>
+         <div>
+          <p class="mb-0">
+           Welcome, Yusuf Ali Hanaan
+          </p>
+          <p class="mb-0">
+           Administrator
+          </p>
+         </div>
+        </div>
+       </div>
+    <nav class="nav flex-column">
+        <a class="nav-link" href="index.html">
+         <i class="fas fa-tachometer-alt me-2">
+         </i>
+         Dashboard
+        </a>
+        <p class="text-uppercase mt-4 mb-2">
+         Menu Karyawan
+        </p>
+        <a class="nav-link" href="karyawan.html">
+         <i class="fas fa-users me-2">
+         </i>
+         Karyawan
+        </a>
+        <a class="nav-link" href="jabatan.html">
+         <i class="fas fa-briefcase me-2">
+         </i>
+         Jabatan
+        </a>
+        <a class="nav-link active" href="divisi.html">
+         <i class="fas fa-building me-2">
+         </i>
+         Divisi
+        </a>
+        <p class="text-uppercase mt-4 mb-2">
+         Menu Absensi
+        </p>
+        <a class="nav-link" href="absensi.html">
+         <i class="fas fa-calendar-check me-2">
+         </i>
+         Absensi
+        </a>
+        <a class="nav-link" href="izin.html">
+         <i class="fas fa-calendar-times me-2">
+         </i>
+         Izin
+        </a>
+        <a class="nav-link" href="lembur.html">
+         <i class="fas fa-clock me-2">
+         </i>
+         Lembur
+        </a>
+        <p class="text-uppercase mt-4 mb-2">
+         Menu Penggajian
+        </p>
+        <a class="nav-link" href="#">
+         <i class="fas fa-file-invoice-dollar me-2">
+         </i>
+         Slip Gaji
+        </a>
+        <a class="nav-link" href="#">
+         <i class="fas fa-print me-2">
+         </i>
+         Cetak Slip Gaji
+        </a>
+        <p class="text-uppercase mt-4 mb-2">
+         Menu Laporan
+        </p>
+        <a class="nav-link" href="#">
+         <i class="fas fa-file-alt me-2">
+         </i>
+         Cetak Laporan
+        </a>
+        <p class="text-uppercase mt-4 mb-2">
+         Menu Admin
+        </p>
+        <a class="nav-link" href="#">
+         <i class="fas fa-user-cog me-2">
+         </i>
+         Pengguna
+        </a>
+        <a class="btn btn-primary mt-4" href="#">
+         <i class="fas fa-sign-out-alt me-2">
+         </i>
+         Logout
+        </a>
+       </nav>
+   </div>
+   <div class="content flex-grow-1">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+         UNIVERSITAS PAMULANG
+        </a>
+        <div class="ml-auto">
+         <i class="fas fa-user-circle fa-2x">
+         </i>
+        </div>
+       </nav>
+    <div class="mt-4">
+     <h2>
+      Dashboard
+     </h2>
+     <div class="table-container mt-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+       <h4>
+        Data Divisi
+       </h4>
+       <button class="btn btn-primary">
+        + Tambah Divisi
+       </button>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mb-3">
+       <div>
+        Show
+        <select class="form-select d-inline-block w-auto">
+         <option>
+          10
+         </option>
+         <option>
+          25
+         </option>
+         <option>
+          50
+         </option>
+         <option>
+          100
+         </option>
+        </select>
+        entries
+       </div>
+       <div>
+        <input class="form-control" placeholder="Search" type="text"/>
+       </div>
+      </div>
+      <table class="table table-bordered">
+       <thead>
+        <tr>
+         <th>
+          No
+         </th>
+         <th>
+          Kode Divisi
+         </th>
+         <th>
+          Divisi
+         </th>
+         <th>
+          Aksi
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          1
+         </td>
+         <td>
+          DIV001
+         </td>
+         <td>
+          HRD
+         </td>
+         <td>
+          <button class="btn btn-sm btn-primary">
+           <i class="fas fa-edit">
+           </i>
+          </button>
+          <button class="btn btn-sm btn-danger">
+           <i class="fas fa-times">
+           </i>
+          </button>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          2
+         </td>
+         <td>
+          DIV002
+         </td>
+         <td>
+          Cleaning Service
+         </td>
+         <td>
+          <button class="btn btn-sm btn-primary">
+           <i class="fas fa-edit">
+           </i>
+          </button>
+          <button class="btn btn-sm btn-danger">
+           <i class="fas fa-times">
+           </i>
+          </button>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          3
+         </td>
+         <td>
+          DIV003
+         </td>
+         <td>
+          IT
+         </td>
+         <td>
+          <button class="btn btn-sm btn-primary">
+           <i class="fas fa-edit">
+           </i>
+          </button>
+          <button class="btn btn-sm btn-danger">
+           <i class="fas fa-times">
+           </i>
+          </button>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          4
+         </td>
+         <td>
+          DIV004
+         </td>
+         <td>
+          Umum
+         </td>
+         <td>
+          <button class="btn btn-sm btn-primary">
+           <i class="fas fa-edit">
+           </i>
+          </button>
+          <button class="btn btn-sm btn-danger">
+           <i class="fas fa-times">
+           </i>
+          </button>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <div class="d-flex justify-content-between align-items-center">
+       <div>
+        Showing 1 to 4 of 4 entries
+       </div>
+       <nav>
+        <ul class="pagination mb-0">
+         <li class="page-item">
+          <a class="page-link" href="#">
+           Previous
+          </a>
+         </li>
+         <li class="page-item active">
+          <a class="page-link" href="#">
+           1
+          </a>
+         </li>
+         <li class="page-item">
+          <a class="page-link" href="#">
+           Next
+          </a>
+         </li>
+        </ul>
+       </nav>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
